@@ -1,18 +1,17 @@
+import { Container, Text } from '../components/Container';
 import tw, { styled } from 'twin.macro';
-
-export const Container = styled.div`
-  ${tw`
-    bg-blue-500
-  `}
-
-  font-size: 20px;
-`;
-
 
 const Home = () => {
   return (
     <Container>
-      gfkaewg eawg ewa gfkaewg
+      <Text>Welcome</Text>
+      <p>Starter File for using 
+        <a tw="text-purple-500 text-xl" target="_blank" href="https://github.com/ben-rogerson/twin.macro" rel="noreferrer noopener ">
+        {" "}
+          twin.macro
+        {" "}
+        </a> 
+        with next js 12</p>  
     </Container>
   )
 }
